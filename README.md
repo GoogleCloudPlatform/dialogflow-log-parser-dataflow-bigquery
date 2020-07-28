@@ -72,7 +72,10 @@ You can change the schema as required in the Dataflow code to include other key:
 
 7. Deploy Dataflow Job
     ```sh
-    python3 stackdriverdataflowbigquery.py --project=[YOUR_PROJECT_ID] --input_topic=projects/[YOUR_PROJECT_ID]/topics/[YOUR_TOPIC_NAME] --runner=DataflowRunner --temp_location=gs://[YOUR_DATAFLOW_STAGING_BUCKET]/tmp --output_bigquery=[YOUR_BIGQUERY_DATASET.YOUR BIGQUERY_TABLE] --region=us-central1
+    python3 stackdriverdataflowbigquery.py --project=[YOUR_PROJECT_ID] \ 
+    --input_topic=projects/[YOUR_PROJECT_ID]/topics/[YOUR_TOPIC_NAME] \ 
+    --runner=DataflowRunner --temp_location=gs://[YOUR_DATAFLOW_STAGING_BUCKET]/tmp \
+    --output_bigquery=[YOUR_BIGQUERY_DATASET.YOUR BIGQUERY_TABLE] --region=us-central1
     ```
 
 8. Enable Dialogflow Logs to Cloud Logging
