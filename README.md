@@ -60,17 +60,21 @@ You can change the schema as required in the Dataflow code to include other key:
     ```sh
     gcloud pubsub topics create [TOPIC_NAME]
     ``` 
+5. Create a Cloud Logging sink
+    ```sh
+    gcloud logging sinks create [SINK_NAME] pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_NAME] --log-filter="resource.type=global"
+    ```
 
-5. Install the Apache Beam GCP Library
+6. Install the Apache Beam GCP Library
     ```sh
     python3 -m virtualenv tempenv
     source tempenv/bin/activate
     pip install apache-beam[gcp]
     ```
 
-6. Create BigQuery dataset
+7. Create BigQuery dataset
 
-7. Deploy Dataflow Job
+8. Deploy Dataflow Job
     ```sh
     python3 stackdriverdataflowbigquery.py --project=[YOUR_PROJECT_ID] \ 
     --input_topic=projects/[YOUR_PROJECT_ID]/topics/[YOUR_TOPIC_NAME] \ 
@@ -78,7 +82,7 @@ You can change the schema as required in the Dataflow code to include other key:
     --output_bigquery=[YOUR_BIGQUERY_DATASET.YOUR BIGQUERY_TABLE] --region=us-central1
     ```
 
-8. Enable Dialogflow Logs to Cloud Logging
+9. Enable Dialogflow Logs to Cloud Logging
 
     Enable Log interactions to Dialogflow and Google Cloud
     https://cloud.google.com/dialogflow/docs/history#access_all_logs
