@@ -40,6 +40,7 @@ You can change the schema as required in the Dataflow code to include other key:
 | logName   | STRING        |
 | lang   | STRING        |
 | textPayload   | STRING        |
+| score   | FLOAT        |
 
 ## Installation
 
