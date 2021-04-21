@@ -73,6 +73,13 @@ You can change the schema as required in the Dataflow code to include other key:
     ```
 
 7. Create BigQuery dataset
+    ```bq mk \
+--table \
+--expiration integer \
+--description description \
+--label key:value, key:value \
+project_id:dataset.table \
+bqschema.json```
 
 8. Deploy Dataflow Job
     ```sh
