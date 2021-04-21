@@ -1,0 +1,119 @@
+  "schema": {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "session_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "trace",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "caller_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "email",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "timestamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "receiveTimestamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resolved_query",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "string_value",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "speech",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "is_fallback_intent",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "webhook_for_slot_filling_used",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "webhook_used",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "intent_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "intent_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "action",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "source",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "error_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "code",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "insertId",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "logName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "lang",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "textPayload",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "score",
+        "type": "STRING"
+      }
+    ]
+  }
